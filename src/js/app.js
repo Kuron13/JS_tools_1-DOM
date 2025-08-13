@@ -1,5 +1,3 @@
-import tenguIcon from "../img/goblin.png";
-
 // comment this to pass build
 //const unusedVariable = "variable";
 
@@ -8,6 +6,8 @@ export default function demo(value) {
   return `Demo: ${value}`;
 }
 console.log("app.js included");
+
+import tenguIcon from "../img/goblin.png";
 
 const allEl = Array.from(document.querySelectorAll('.cell'))
 
