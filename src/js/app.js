@@ -1,5 +1,15 @@
 import tenguIcon from "../img/goblin.png";
 
+// comment this to pass build
+const unusedVariable = "variable";
+
+// for demonstration purpose only
+export default function demo(value) {
+  return `Demo: ${value}`;
+}
+
+console.log("app.js included");
+
 const allEl = Array.from(document.querySelectorAll('.cell'))
 
 const tengu = document.createElement('img');
@@ -15,14 +25,3 @@ document.addEventListener('DOMContentLoaded', () => {
     newTenguCell.appendChild(tengu);
   }, 2000)
 })
-
-
-// comment this to pass build
-const unusedVariable = "variable";
-
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
-}
-
-console.log("app.js included");
