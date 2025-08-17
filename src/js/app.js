@@ -1,21 +1,22 @@
+const cellContainer = document.querySelector('.cell-container')
+for (let i = 1; i <= 16; i++) {
+  const cell = document.createElement('div');
+  cell.classList.add('cell')
+  cellContaner.append(cell)
+}
+
 const allEl = Array.from(document.querySelectorAll('.cell'))
 
 document.addEventListener('DOMContentLoaded', () => {
   const tengu = document.querySelector('.tengu')
+  let tenguIndex = 0;
+  let randomCell = 0;
   const gameInterval = setInterval(() => {
-    let randomCell = Math.floor(Math.random() * allEl.length)
-    if (allEl[randomCell].contains(tengu)) {randomCell += 1;}
+    do {
+      randomCell = Math.floor(Math.random() * allEl.length)
+    } while (randomCell == tenguIndex)    
     const newTenguCell = allEl[randomCell];
-    newTenguCell.appendChild(tengu);
+    tenguIndex = randomCell;
+    newTenguCell.append(tengu);
   }, 2000)
 })
-
-// comment this to pass build
-const unusedVariable = "variable";
-
-// for demonstration purpose only
-export default function demo(value) {
-  return `Demo: ${value}`;
-}
-
-console.log("app.js included");
