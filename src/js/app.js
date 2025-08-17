@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const tengu = document.querySelector('.tengu')
   let tenguIndex = 0;
   let randomCell = 0;
-  const gameInterval = setInterval(() => {
+  setInterval(() => {
     do {
       randomCell = Math.floor(Math.random() * allEl.length)
     } while (randomCell == tenguIndex)    
