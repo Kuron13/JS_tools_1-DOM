@@ -8,8 +8,7 @@ function tenguImage() {
   tengu.classList.add('tengu');
   tengu.src = tenguIcon;
   tengu.alt = "Тенгу";
-  //document.body.appendChild(tengu)
-  console.log(tengu)
+  //console.log(tengu)
   return tengu
 }
 
