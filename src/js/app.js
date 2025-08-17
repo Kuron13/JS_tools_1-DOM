@@ -2,7 +2,7 @@ const cellContainer = document.querySelector('.cell-container')
 for (let i = 1; i <= 16; i++) {
   const cell = document.createElement('div');
   cell.classList.add('cell')
-  cellContaner.append(cell)
+  cellContainer.append(cell)
 }
 
 const allEl = Array.from(document.querySelectorAll('.cell'))
