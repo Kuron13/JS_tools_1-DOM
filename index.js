@@ -1,6 +1,6 @@
-import "./css/style.css";
+import "./src/css/style.css";
 
-import tenguIcon from "./img/goblin.png";
+import tenguIcon from "./src/img/goblin.png";
 
 function tenguImage() {
   //const tengu = new Image();
@@ -15,4 +15,4 @@ function tenguImage() {
 
 document.body.appendChild(tenguImage());
 
-import "./js/app";
+import "./src/js/app";
